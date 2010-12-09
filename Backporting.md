@@ -236,7 +236,16 @@ Continue the process above until all necessary commits have been cherry picked o
 
 ## Summary
 
-Here we've shown how simple it is to port changes from one branch to another, and in the process shown two tools for visualizing what's going on: `git show-branch` and `git cherry`. Of course you can choose to use either or both tools based on preference and style.  It's also possible to use `gitx`, `gitk`, or any of the other git guis to visualize the process.  In Git, there's usually more than one way to do it.  Both tools have been shown here to help provide context about what we're actually looking at: *commits* vs *changes* or *diffs* having been applied.
+Here we've shown how simple it is to port changes from one branch to another.  Now that all the exposition is out of the way, let's review the actual commands necessary to perform this kind of backporting task:
+
+1. `git checkout -b 3.0.6 spring-framework-3.0.5` # *more convenient than `git branch X` followed by `git checkout X`*
+1. `git cherry-pick <commit-sha>`
+1. repeat for as many commits as necessary
+1. visualize the state of 3.0.6 using `git show-branch`, `git cherry`, and/or a git gui
+1. test the changes, publish the release.
+
+
+In the process we've shown two tools for visualizing what's going on: `git show-branch` and `git cherry`. Of course you can choose to use either or both tools based on preference and style.  It's also possible to use `gitx`, `gitk`, or any of the other git guis to visualize the process.  In Git, there's usually more than one way to do it.  Both tools have been shown here to help provide context about what we're actually looking at: *commits* vs *changes* or *diffs* having been applied.
 
 As a final note, let's inspect one of the cherry-picked changes, using `[[git log|http://www.kernel.org/pub/software/scm/git/docs/git-log.html]]`. Remember, our current working context is still `3.0.6`, so the log we're seeing is the commit log of that branch:
 
