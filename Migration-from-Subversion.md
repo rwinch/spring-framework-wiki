@@ -8,7 +8,7 @@
 1. `sudo gem install svn2git --source http://gemcutter.org`
 1. `svn2git -A ~/.svn2git/[[authors|https://jira.springsource.org/secure/attachment/17435/authors]] --verbose https://src.springframework.org/svn/spring-framework`
 1. `cd spring-framework`
-1. `git remote add origin git@git.springsource.org:spring-integration/spring-integration.git`
+1. `git remote add origin git@github.com/cbeams/spring-framework.git`
 1. `git push --all --set-upstream origin`
 1. `git push --tags origin`
 
