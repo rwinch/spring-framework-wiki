@@ -13,7 +13,7 @@ This should be a trivial task thanks to the way Git branching works and how simp
 
 This document will cover all but the final testing and publication steps, as this is documented elsewhere.
 
-*Please note this document assumes at least a basic familiarity with git concepts such as branches, commits, sha1 checksums.  Consider walking through the short and helpful [[http://gitref.org]] first if necessary.  More advanced operations such as cherry picking will be explained inline below.
+*Please note this document assumes at least a basic familiarity with git concepts such as branches, commits, sha1 checksums.  Consider walking through the short and helpful [[http://gitref.org]] first if necessary.  More advanced operations such as cherry picking will be explained inline below.*
 
 # Step one: Create 3.0.6 branch
 
