@@ -6,7 +6,7 @@
 
 1. Create new github repository at [[https://github.com/cbeams/spring-framework]]
 1. `sudo gem install svn2git --source http://gemcutter.org`
-1. `svn2git -A ~/.svn2git/[[authors|https://jira.springsource.org/secure/attachment/17435/authors]] --verbose https://src.springframework.org/svn/spring-framework`
+1. `svn2git --authors ~/.svn2git/[[authors|https://jira.springsource.org/secure/attachment/17435/authors]] --verbose https://src.springframework.org/svn/spring-framework`
 1. `cd spring-framework`
 1. `git remote add origin git@github.com/cbeams/spring-framework.git`
 1. `git push --all --set-upstream origin`
