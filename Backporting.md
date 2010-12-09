@@ -38,6 +38,7 @@ Finally, check out the new 3.0.6 branch:
     $ git co 3.0.6
     Switched to branch '3.0.6'
 
+
 # Step two: Identify commits present only on master
 
 There are a number of ways this can be done, but perhaps the nicest is with `[[git show-branch|http://www.kernel.org/pub/software/scm/git/docs/git-show-branch.html]]`:
@@ -85,6 +86,9 @@ This output tells us the following:
 * `master` and `3.0.6` have only one commit in common: `[master~32] SPR-7667`
 * `3.0.6` contains one commit not present on master: `Spring 3.0.5`
 * `master` contains roughly 30 commits not present on `3.0.6`
+
+
+## Step three: Apply selected commits to the backport branch
 
 Our job is now to determine which of these commits should be applied to 3.0.6.  For example, it's likely that `[master~25] SPR-7695` is a fix that should be backported.
 
