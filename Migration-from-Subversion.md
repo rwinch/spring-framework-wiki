@@ -8,9 +8,9 @@
 1. `sudo gem install svn2git --source http://gemcutter.org`
 1. `svn2git --metadata --authors ~/.svn2git/[[authors|https://jira.springsource.org/secure/attachment/17435/authors]] --verbose https://src.springframework.org/svn/spring-framework`
 1. `cd spring-framework`
-1. `git remote add origin git@github.com:cbeams/spring-framework.git`
-1. `git push --all origin`
-1. `git push --tags origin`
+1. `git remote add github-mirror git@github.com:cbeams/spring-framework.git`
+1. `git push --all github-mirror`
+1. `git push --tags github-mirror`
 
 ## Keeping the spring-framework Github repo up to date with Subversion
 
