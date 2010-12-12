@@ -12,7 +12,7 @@
 1. `git push --all github-mirror`
 1. `git push --tags github-mirror`
 
-## Keeping the spring-framework Github repo up to date with Subversion
+## Keeping the spring-framework Github mirror up to date with canonical Subversion repo
 
 So long as https://src.springframework.org/svn/spring-framework remains the canonical repository for Spring development, this Git repository may be kept up to date with the following:
 
@@ -20,4 +20,4 @@ So long as https://src.springframework.org/svn/spring-framework remains the cano
 1. `git svn fetch`  # notice which branches are updated
 1. `git co <branch>` # for each branch affected by the fetch
 1. `git svn merge remotes/<branch>` # to actually merge the changes in from svn
-1. `git push && git push --tags`
+1. `git push github-mirror && git push --tags github-mirror`
