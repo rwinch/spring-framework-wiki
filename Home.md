@@ -51,5 +51,4 @@ If you're looking for more information on building the framework, for example se
 
 ----
 
-* [[Migration from Subversion]]
-* [[Backporting]]
+Browse [all wiki pages](https://github.com/cbeams/spring-framework/wiki/_pages)
