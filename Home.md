@@ -1,6 +1,6 @@
 ## Welcome!
 
-This repository serves as a mirror of the canonical Spring Framework repository at https://src.springsource.org/svn/spring-framework.  Commits made against subversion trunk are pushed to master here on a roughly daily basis.
+This repository serves as a mirror of the canonical Spring Framework repository at https://src.springsource.org/svn/spring-framework.  Commits made against trunk there are pushed to master here on a roughly daily basis.
 
 Feel free to [watch and/or fork](http://help.github.com/fork-a-repo/) this repository if you prefer to keep up with Spring development via Git instead of SVN.
 
