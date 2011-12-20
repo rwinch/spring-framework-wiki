@@ -32,11 +32,26 @@ Make sure you've got a recent version of Ant (1.8.2 or better is a safe bet), an
 
     $ ant -f build-spring-framework/build.xml test
 
-The first time you run this, it'll take quite a while, as all of Spring's dependencies (even the optional ones) need to be downloaded into your local `ivy-cache` directory. After this initial downloading is complete, you can expect a complete build/test run to take anywhere between 5 and 20 minutes depending on your system.
+The first time you run this, it'll take quite a while, as all of Spring's dependencies (even the optional ones) need to be downloaded into your local `ivy-cache` directory. After this initial downloading is complete, you can expect a complete build/test run to take anywhere between 5 and 20 minutes depending on your system.  If you don't care about running tests, and just want to build the jars, this typically takes only a couple of minutes.
 
-### To install spring artifacts into your local Maven cache
+### To build install Spring artifacts into your local Maven cache
 
     $ ant -f build-spring-framework/build.xml jar install-maven-central
+
+### To build a distribution
+In rare cases, you may wish to build a distribution zip locally.  For example, if you cannot use a build system such as Maven or Gradle with dependency management capabilities, and you want to ensure that you have Spring and all necessary dependencies on your classpath.
+
+#### Check out the version you wish to build
+
+    $ git tag -l  # select a tag from the list, e.g. `v3.1.0.RELEASE`
+    $ git co v3.1.0.RELEASE
+
+#### Create the distribution zip
+    $ ant -f build-spring-framework/build.xml package
+
+When complete, `build-spring-framework/target/artifacts/spring-framework-3.1.0.RELEASE-dependencies.zip`, will be available, containing all Spring module Jars and all external dependencies, both optional and required.
+
+See also [[Downloading Spring artifacts]].
 
 ----
 
