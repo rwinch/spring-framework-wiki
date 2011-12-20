@@ -1,3 +1,5 @@
+<!-- If the name of this document is changed, please update the link at http://blog.springsource.org/2009/03/03/building-spring-3 -->
+
 ## Introduction
 The Spring Framework is built using a combination of Ant and Ivy called _Spring Build_[1].
 
