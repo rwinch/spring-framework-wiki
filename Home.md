@@ -1,4 +1,4 @@
 ## Welcome!
 
-* [Building from source]
-* [Downloading Spring artifacts]
+* [[Building from source]]
+* [[Downloading Spring artifacts]]
