@@ -36,7 +36,7 @@ Make sure you've got a recent version of Ant (1.8.2 or better is a safe bet), an
 
 The first time you run this, it'll take quite a while, as all of Spring's dependencies (even the optional ones) need to be downloaded into your local `ivy-cache` directory. After this initial downloading is complete, you can expect a complete build/test run to take anywhere between 5 and 20 minutes depending on your system.  If you don't care about running tests, and just want to build the jars, this typically takes only a couple of minutes.
 
-### To build install Spring artifacts into your local Maven cache
+### To build and install Spring artifacts into your local Maven cache
 Perhaps you've made local changes to your `spring-framework` repository, and now you'd like to test them out against your application.  Assuming that your application is built with Maven or Gradle, you'll want to build the artifacts and "install" them into your local $HOME/.m2 repository.  Here's how to do it:
 
     $ ant -f build-spring-framework/build.xml jar install-maven-central
