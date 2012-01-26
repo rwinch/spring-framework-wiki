@@ -1,5 +1,10 @@
 <!-- If the name of this document is changed, please update the link at http://blog.springsource.org/2009/03/03/building-spring-3 -->
 
+
+_NOTE: these instructions apply to versions 3.1.x and earlier only!  As of Spring 3.2, the build system has [moved to Gradle](https://jira.springsource.org/browse/SPR-8116).  See the README in the root of the source tree for basic build instructions and also the [[Gradle build and release FAQ]]._
+***
+
+
 ## Introduction
 The Spring Framework is built using a combination of Ant and Ivy called _Spring Build_[1].
 

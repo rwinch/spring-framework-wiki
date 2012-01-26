@@ -1,5 +1,6 @@
 ## Welcome!
 
 * [README](../spring-framework/#readme)
-* [[Building from source]]
 * [[Downloading Spring artifacts]]
+* [[Gradle build and release FAQ]]
+* [[SpringSource repository FAQ]]
