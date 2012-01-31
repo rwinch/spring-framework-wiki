@@ -107,9 +107,7 @@ See the `import-into-eclipse.sh` and `import-into-idea.md` files in the root of 
 Note that both IDEA and STS are hard at work on even more advanced Gradle tooling from the IDE side.  At the time of this writing, neither one is quite capable of meeting all the needs of a build as complex as Spring's, but they'll get there soon.  In the meantime, Gradle's built-in support works quite well.
 
 ## Understand handling of 'optional' and 'provided' dependencies.
-This commit provides all the detail you'll ever want on how we manage optional and provided dependencies with regard to our generated Maven poms:
-
-    TODO - url to commit
+[This commit](https://github.com/SpringSource/spring-framework/commit/b6cb514d383dcef52ba6c609a863f19e1a4c1faf) provides all the detail you'll ever want on how we manage optional and provided dependencies with regard to our generated Maven poms.
 
 ## Use the `init.gradle` init script to configure repo.springsource.org authentication
 See the FAQ item on [authentication](#wiki-authentication) below.
