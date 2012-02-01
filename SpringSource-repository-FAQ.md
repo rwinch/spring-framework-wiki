@@ -4,7 +4,7 @@ This document explains the purpose, nature, and best practices for use of the Sp
 * [For the impatient](#wiki-impatient)
 * [What is the SpringSource repository?](#wiki-what_is_repo)
 * [What repositories are available?](#wiki-available_repositories)
-* [Can I resolve EBR artifacts via repo.springframework.org?](#wiki-ebr)
+* [Can I resolve EBR artifacts via repo.springsource.org?](#wiki-ebr)
 * [Will artifacts still be published to Maven Central?](#wiki-maven_central)
 * [What about existing artifacts published to S3 / maven.springsource.org?](#wiki-s3)
 * [What are the benefits of the SpringSource repository?](#wiki-benefits)
