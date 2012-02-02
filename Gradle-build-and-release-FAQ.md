@@ -169,6 +169,10 @@ Users wishing to consume snapshot builds may add http://repo.springsource.org/sn
 
 The steps are simple, and almost everything is done via the Bamboo and Artifactory UIs. 
 
+## One-time setup
+
+Configure your CI build plan to use the [Artifactory Maven 3 or Artifactory Gradle tasks](http://wiki.jfrog.org/confluence/display/RTF/Bamboo+Artifactory+Plug-in#BambooArtifactoryPlug-in-ConfiguringMaven3%2CGradleandIvyBuilders) as appropriate.  For "Deployer Username", use "buildmaster" (password on request).
+
 ## Steps at a glance
 
 1. Stage the release into the libs-staging-local repository
