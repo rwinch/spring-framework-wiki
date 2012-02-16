@@ -28,6 +28,7 @@ Please carefully follow the whitespace and formatting conventions already presen
 1. Eliminate all trailing whitespace
 1. Wrap Javadoc at 90 characters
 1. Aim to wrap code at 90 characters, but favor readability over wrapping
+1. Preserve existing formatting; i.e. do not reformat code for its own sake
 1. Search the codebase using `git grep` and other tools to discover common naming conventions, etc.
 
 
