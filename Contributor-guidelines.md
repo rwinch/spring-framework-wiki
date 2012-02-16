@@ -167,6 +167,6 @@ Add a comment to the associated JIRA issue(s) linking to your new pull request.
 
 ## Expect discussion and rework
 
-The Spring team takes a very conservative approach to accepting contributions to the framework.  This is to keep code quality and stability as high as possible, and to keep complexity at a minimum.  Your changes, if accepted, may be heavily modified prior merging.  You will retain "Author:" attribution for your Git commits granted that the bulk of your changes remain intact.  You may be asked to rework the submission for style (as explained above) and/or substance. Again, we strongly recommend discussing any serious submissions with the Spring Framework team _prior_ to engaging in any serious development work.
+The Spring team takes a very conservative approach to accepting contributions to the framework.  This is to keep code quality and stability as high as possible, and to keep complexity at a minimum.  Your changes, if accepted, may be heavily modified prior to merging.  You will retain "Author:" attribution for your Git commits granted that the bulk of your changes remain intact.  You may be asked to rework the submission for style (as explained above) and/or substance. Again, we strongly recommend discussing any serious submissions with the Spring Framework team _prior_ to engaging in serious development work.
 
 Note that you can always force push (`git push -f`) reworked / rebased commits against the branch used to submit your pull request.  i.e. you do not need to issue a new pull request when asked to make changes.
