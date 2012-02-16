@@ -145,13 +145,17 @@ See https://github.com/SpringSource/spring-framework#building_from_source for in
 
 ## Submit your pull request
 
-For pull requests containing a single commit, GitHub will default the subject line and body of the pull request to match the subject line and body of the commit message.  This is fine.
 
 Otherwise, follow the same conventions for pull request subject lines as mentioned above for commit message subject lines.
 
-1. Add any additional information and ask questions in the body of the pull request
-1. Mention the JIRA issue ID in the body of the pull request
+In the body:
+
+1. Explain your use case. What led you to submit this change? Why were existing mechanisms in the framework insufficient? Make a case that this is a general-purpose problem and that yours is a general-purpose solution, etc
+1. Add any additional information and ask questions; start a conversation, or continue one from JIRA
+1. Mention the JIRA issue ID
 1. Also mention that you have submitted the CLA as described above
+
+Note that for pull requests containing a single commit, GitHub will default the subject line and body of the pull request to match the subject line and body of the commit message.  This is fine, but please also include the items above in the body of the request.
 
 
 ## Mention your pull request on the associated JIRA issue
