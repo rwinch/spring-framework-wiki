@@ -146,7 +146,9 @@ See https://github.com/SpringSource/spring-framework#building_from_source for in
 ## Submit your pull request
 
 
-Otherwise, follow the same conventions for pull request subject lines as mentioned above for commit message subject lines.
+Subject line:
+
+Follow the same conventions for pull request subject lines as mentioned above for commit message subject lines.
 
 In the body:
 
