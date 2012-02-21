@@ -93,9 +93,13 @@ maven.springframework.org DNS now points to repo.springsource.org.  /snapshot, /
 If you are a project lead or committer and notice that an artifact is not available via repo.springsource.org/libs-release, /libs-snapshot, etc, you may need to request that a new repository be added to the Artifactory configuration.  Do the following:
 
 1. First, determine that the artifact is actually missing.  Go to http://repo.springsource.org and perform various searches to ensure that the artifact definitely does not exist in any repository.
-1. Determine the 'canonical home' of the artifact in question. For example, `cascading:cascading-core` lives at http://clojars.org/repo.
-2. Send mail to buildmaster@springframework.org.  Include the canonical repository URL as discussed in (2), and the groupId/artifactId/version/classifier of the artifact you need.  Please also mention which Spring project depends on this artifact (which will be used for documentation purposes).
-3. The team will add the new repository and aggregate it as appropriate under libs-release (or libs-snapshot / libs-milestone where appropriate) and will respond letting you know when it's ready.  Turnaround time here should be quick, as this is a trivial exercise to perform.
+2. Determine the 'canonical home' of the artifact in question. For example, `cascading:cascading-core` lives at http://clojars.org/repo.  If you cannot find the jar in any Maven repository, and must download it manually or build from source, see the note that follows these steps.
+3. Send mail to buildmaster@springframework.org.  Include the canonical repository URL as discussed in (2), and the groupId/artifactId/version/classifier of the artifact you need.  Please also mention which Spring project depends on this artifact (which will be used for documentation purposes).
+4. The team will add the new repository and aggregate it as appropriate under libs-release (or libs-snapshot / libs-milestone where appropriate) and will respond letting you know when it's ready.  Turnaround time here should be quick, as this is a trivial exercise to perform.
+
+## A note on jars unavailable in any Maven repository
+
+Occasionally a dependency will be unavailable in any Maven repository and must be downloaded manually or built from source.  In such cases, you may upload these artifacts directly into the `ext-snapshot-local` or `ext-release-local` repositories using the "Deploy" tab available from the homepage at http://repo.springsource.org.  The wizard there will walk you through POM generation, specifying GAVC coordinates, etc.  IMPORTANT: Take care to understand the license of any artifacts you upload in this fashion.  If the license does not permit distribution, you cannot use these repositories.  `ext-private-local` exists for this purpose, and makes these artifacts available to internal users only.  Direct any questions about this process to buildmaster@springframework.org. 
 
 ***
 <a name="wiki-benefits"/>
