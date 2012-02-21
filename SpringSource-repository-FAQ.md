@@ -1,4 +1,4 @@
-This document explains the purpose, nature, and best practices for use of the SpringSource repository at  http://repo.springsource.org. For basic instructions on downloading Spring artifacts manually or using Maven and other build systems, see [[downloading Spring artifacts]].
+_This document explains the purpose, nature, and best practices for use of the SpringSource repository at  http://repo.springsource.org. For basic instructions on downloading Spring artifacts manually or using Maven and other build systems, see [[downloading Spring artifacts]]._
 
 ### Table of Contents
 * [For the impatient](#wiki-impatient)
@@ -7,6 +7,7 @@ This document explains the purpose, nature, and best practices for use of the Sp
 * [Can I resolve EBR artifacts via repo.springsource.org?](#wiki-ebr)
 * [Will artifacts still be published to Maven Central?](#wiki-maven_central)
 * [What about existing artifacts published to S3 / maven.springsource.org?](#wiki-s3)
+* [The artifact(s) I need are not available via the SpringSource repository. How do I get them added?](#wiki-add_repository)
 * [What are the benefits of the SpringSource repository?](#wiki-benefits)
 
 ***
@@ -85,6 +86,16 @@ Yes. As always, GA (.RELEASE) versions of Spring Framework and all the other Spr
 <a name="wiki-s3"/>
 # What about existing artifacts published to S3 / maven.springsource.org?
 maven.springframework.org DNS now points to repo.springsource.org.  /snapshot, /milestone and /release paths map seamlessly and pick up artifacts in S3 as well as in repo.springsource.org. Read the entry above on [available repositories](#wiki-available_repositories) for details.
+
+***
+<a name="wiki-add_repository"/>
+# The artifact(s) I need are not available via the SpringSource repository. How do I get them added?
+If you are a project lead or committer and notice that an artifact is not available via repo.springsource.org/libs-release, /libs-snapshot, etc, you may need to request that a new repository be added to the Artifactory configuration.  Do the following:
+
+1. First, determine that the artifact is actually missing.  Go to http://repo.springsource.org and perform various searches to ensure that the artifact definitely does not exist in any repository.
+1. Determine the 'canonical home' of the artifact in question. For example, `cascading:cascading-core` lives at http://clojars.org/repo.
+2. Send mail to buildmaster@springframework.org.  Include the canonical repository URL as discussed in (2), and the groupId/artifactId/version/classifier of the artifact you need.  Please also mention which Spring project depends on this artifact (which will be used for documentation purposes).
+3. The team will add the new repository and aggregate it as appropriate under libs-release (or libs-snapshot / libs-milestone where appropriate) and will respond letting you know when it's ready.  Turnaround time here should be quick, as this is a trivial exercise to perform.
 
 ***
 <a name="wiki-benefits"/>
