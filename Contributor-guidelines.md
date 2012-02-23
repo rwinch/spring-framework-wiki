@@ -55,7 +55,7 @@ Please carefully follow the whitespace and formatting conventions already presen
 
 ## Update Apache license header to modified files as necessary
 
-Always check the date range in the license header.  If you've modified a file in 2012 whose header still reads
+Always check the date range in the license header.  For example, if you've modified a file in 2012 whose header still reads
 
      * Copyright 2002-2011 the original author or authors.
 
