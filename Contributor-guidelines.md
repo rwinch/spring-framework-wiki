@@ -34,72 +34,80 @@ Please carefully follow the whitespace and formatting conventions already presen
 
 ## Add Apache license header to all new classes
 
-    /*
-     * Copyright 2002-2012 the original author or authors.
-     *
-     * Licensed under the Apache License, Version 2.0 (the "License");
-     * you may not use this file except in compliance with the License.
-     * You may obtain a copy of the License at
-     *
-     *      http://www.apache.org/licenses/LICENSE-2.0
-     *
-     * Unless required by applicable law or agreed to in writing, software
-     * distributed under the License is distributed on an "AS IS" BASIS,
-     * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     * See the License for the specific language governing permissions and
-     * limitations under the License.
-     */
+```java
+/*
+ * Copyright 2002-2012 the original author or authors.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
-     package ...;
-
+package ...;
+```
 
 ## Update Apache license header to modified files as necessary
 
 Always check the date range in the license header.  For example, if you've modified a file in 2012 whose header still reads
 
-     * Copyright 2002-2011 the original author or authors.
+```java
+ * Copyright 2002-2011 the original author or authors.
+```
 
 then be sure to update it to 2012 appropriately
 
-     * Copyright 2002-2012 the original author or authors.
-
+```java
+ * Copyright 2002-2012 the original author or authors.
+```
 
 ## Use @since tags for newly-added public API types and methods
 
 e.g.
 
-    /**
-     * ...
-     *
-     * @author First Last
-     * @since 3.2
-     * @see ...
-     */ 
-
+```java
+/**
+ * ...
+ *
+ * @author First Last
+ * @since 3.2
+ * @see ...
+ */
+```
 
 ## Submit JUnit test cases for all behavior changes
 
 Search the codebase to find related unit tests and add additional @Test methods within.  It is also acceptable to submit test cases on a per JIRA issue basis, e.g.
 
-    package org.springframework.beans.factory.support;
+```java
+package org.springframework.beans.factory.support;
 
-    /**
-     * Unit tests for SPR-8954, in which a custom {@link InstantiationAwareBeanPostProcessor}
-     * forces the predicted type of a FactoryBean, effectively preventing retrieval of the
-     * bean from calls to #getBeansOfType(FactoryBean.class). The implementation of
-     * {@link AbstractBeanFactory#isFactoryBean(String, RootBeanDefinition)} now ensures
-     * that not only the predicted bean type is considered, but also the original bean
-     * definition's beanClass.
-     *
-     * @author Chris Beams
-     */
-    public class Spr8954Tests {
+/**
+ * Unit tests for SPR-8954, in which a custom {@link InstantiationAwareBeanPostProcessor}
+ * forces the predicted type of a FactoryBean, effectively preventing retrieval of the
+ * bean from calls to #getBeansOfType(FactoryBean.class). The implementation of
+ * {@link AbstractBeanFactory#isFactoryBean(String, RootBeanDefinition)} now ensures
+ * that not only the predicted bean type is considered, but also the original bean
+ * definition's beanClass.
+ *
+ * @author Chris Beams
+ */
+public class Spr8954Tests {
 
-        @Test
-        public void cornerSpr8954() {
-            // ...
-        }
+    @Test
+    public void cornerSpr8954() {
+        // ...
     }
+}
+```
+
 
 ## Squash commits
 
