@@ -52,6 +52,18 @@ Please carefully follow the whitespace and formatting conventions already presen
 
      package ...;
 
+
+## Update Apache license header to modified files as necessary
+
+Always check the date range in the license header.  If you've modified a file in 2012 whose header still reads
+
+     * Copyright 2002-2011 the original author or authors.
+
+then be sure to update it to 2012 appropriately
+
+     * Copyright 2002-2012 the original author or authors.
+
+
 ## Use @since tags for newly-added public API types and methods
 
 e.g.
