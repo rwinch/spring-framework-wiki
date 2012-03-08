@@ -118,6 +118,29 @@ Use `git rebase --interactive`, `git add --patch` and other tools to "squash" mu
 
 Branches used when submitting pull requests should preferably be named according to JIRA issues, e.g. 'SPR-1234'.  Otherwise, use succinct, lower-case, dash (-) delimited names, such as 'fix-warnings', 'fix-typo', etc.  In fork-and-edit cases, the github default 'patch-1' is fine as well.  This is important, because branch names show up in the merge commits that result from accepting pull requests, and should be as expressive and concise as possible.
 
+## Use real name in git commits
+
+Please configure git to use your real first and last name for any commits you intend to submit as pull requests.  For example, this is not acceptable:
+
+    Author: Nickname <user@mail.com>
+
+Rather, please include your first and last name, properly capitalized, as submitted against the SpringSource contributor license agreement:
+
+    Author: First Last <user@mail.com>
+
+This helps ensure traceability against the CLA, and also goes a long way to ensuring useful output from tools like `git shortlog` and others.
+
+You can configure this globally via the account admin area GitHub (useful for fork-and-edit cases); globally with
+
+    git config --global user.name "First Last"
+    git config --global user.email user@mail.com
+
+or locally for the spring-framework repository only by omitting the '--global' flag:
+
+    cd spring-framework
+    git config user.name "First Last"
+    git config user.email user@mail.com
+
 
 ## Format commit messages
 
