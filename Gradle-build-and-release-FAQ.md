@@ -255,11 +255,21 @@ Choosing this option means that the build will first be published into a staging
 
 Note that with regard to requirements for OSO onboarding, Artifactory automatically generates sha1 and md5 checksums for all artifacts, so you don't need to worry about this. Furthermore, a [custom plugin](https://github.com/JFrogDev/artifactory-user-plugins/blob/master/pgp-sign/pgpSign.groovy) has been developed for repo.springsource.org that adds PGP signatures (.asc files) on the fly during upload using the buildmaster@springframework.org PGP key.  You simply need to make sure that your build produces jars (including -sources and -javadoc jars) and well-formed poms.  Any zip files such as distribution or doc zips are excluded from the promotion process to OSO.
 
-When the promotion process is complete, i.e. closing the staging repository at OSO succeeds, there is one additional step - you must log into http://oss.sonatype.org with the 'springsource' account. You will see your closed staging repository there, and you must manually click the 'promote' button. It looks something like this:
+When the promotion process is complete, i.e. closing the staging repository at OSO succeeds, there is one additional step - you must log into http://oss.sonatype.org with the 'springsource' account and manually 'release' to Maven Central.
 
-![nexus-promote-button](http://www.sonatype.com/books/nexus-book/reference/figs/web/staging_promote-to-group-button.png)
+1. Go to http://oss.sonatype.org and click 'log in'
+1. username: springsource; password: [on request](mailto:buildmaster@springframework.org)
+1. Click on "Staging Repositories".
+1. You will see your closed staging repository there; click to select it.
+1. Click the 'Release' button. It looks something like this:
 
-Pressing the promote button means that your artifacts will be published into Maven Central, but beware -- there's no going back after this point!
+![nexus-release-button](https://docs.sonatype.org/download/attachments/6619284/staging_release.png?version=1&modificationDate=1279720544670)
+
+When you're prompted for a description, you can leave it blank.
+
+Pressing the release button means that your artifacts will be published into Maven Central, but beware -- there's no going back after this point!
+
+**Synchronization to Maven Central happens every two hours**.  So your project should be discoverable via http://search.maven.org no more than two hours after you hit the release button.
 
 ***
 <a name="wiki-docs_schema_dist_publication"/>
@@ -284,4 +294,3 @@ Full documentation for this feature can be found in the [Artifactory Gradle plug
 The `type` property tells autorepo that the artifact is a 'docs-zip', 'schema-zip', or 'dist-zip'.  The `deployed` property tells autorepo whether it has already uploaded and unpacked this artifact.  When autorepo detects a new docs or schema zip (deployed == false), it performs the uploading and unpacking, and then sets the `deployed` property to `true`.
 
 The distribution zip, on the other hand, remains within Artifactory and the SpringSource [community download page](www.springsource.com/download/community) queries repo.springsource.org to provide the list of dist zip downloads for each project.  It uses the same metadata mentioned above to perform the search.
-
