@@ -117,6 +117,8 @@ The SpringSource repository provides search over *all* Spring project artifacts 
 ## tight control over dependency management
 As described [above](#wiki-available_repositories), repo.springsource.org's virtual repositories allow Spring project teams and Spring users alike to restrict or allow access to snapshot, milestone, RC, and GA versions -- and all transitive dependencies -- with a single URL.  For example, during different phases of project development, one may wish to disallow use of any snapshot dependencies, or disallow use of anything other than GA versions of dependencies.  repo.springsource.org makes this simple.
 
+Artifactory also supports dynamically [discarding unwanted &lt;repository&gt; entries](http://wiki.jfrog.org/confluence/display/RTF/Virtual+Repositories#VirtualRepositories-MakingSureArtifactoryisYourSoleArtifactsProvider) from downstream POMs.  This means that you are guaranteed all your dependencies and transitive dependencies come from a single location -- your local build client will never begin resolving from other third party repositories unless you want it to. 
+
 ## improved build traceability and reproducibility
 Again, thanks to Artifactory's CI integration with Bamboo, first-class metadata about builds and their artifacts are published to Artifactory, allowing for bi-directional linking between a particular build in Bamboo and the artifacts it published into Artifactory.  Environment variables, system statistics, build tool versions, and principal information are also published as part of this build metadata, ensuring that artifacts can be reproduced exactly if necessary.
 
