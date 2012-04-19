@@ -290,6 +290,7 @@ In order for autorepo to work properly, these artifacts must be annotated in Art
 [[artifact-properties.png]]
 
 And here are those properties in copy-pastable form:
+
 ```
 archives *:*:*:*@zip zip.name:spring-framework, zip.displayname:Spring Framework, zip.deployed:false
 archives *:*:*:docs@zip zip.type:docs
