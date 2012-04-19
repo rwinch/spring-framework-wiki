@@ -289,8 +289,18 @@ In order for autorepo to work properly, these artifacts must be annotated in Art
 
 [[artifact-properties.png]]
 
-Full documentation for this feature can be found in the [Artifactory Gradle plugin documentation](http://wiki.jfrog.org/confluence/display/RTF/Gradle+Artifactory+Plugin#GradleArtifactoryPlugin-ThePropertiesClosureDSL)
+And here are those properties in copy-pastable form:
+```
+archives *:*:*:*@zip zip.name:spring-framework, zip.displayname:Spring Framework, zip.deployed:false
+archives *:*:*:docs@zip zip.type:docs
+archives *:*:*:dist@zip zip.type:dist
+archives *:*:*:schema@zip zip.type:schema
+```
 
-The `type` property tells autorepo that the artifact is a 'docs-zip', 'schema-zip', or 'dist-zip'.  The `deployed` property tells autorepo whether it has already uploaded and unpacked this artifact.  When autorepo detects a new docs or schema zip (deployed == false), it performs the uploading and unpacking, and then sets the `deployed` property to `true`.
+_Note: Full documentation for this feature can be found in the [Artifactory Gradle plugin documentation](http://wiki.jfrog.org/confluence/display/RTF/Gradle+Artifactory+Plugin#GradleArtifactoryPlugin-ThePropertiesClosureDSL)._
 
-The distribution zip, on the other hand, remains within Artifactory and the SpringSource [community download page](www.springsource.com/download/community) queries repo.springsource.org to provide the list of dist zip downloads for each project.  It uses the same metadata mentioned above to perform the search.
+The `zip.type` property tells autorepo that the artifact is a 'docs', 'schema', or 'dist'.  The `zip.deployed` property tells autorepo whether it has already uploaded and unpacked this artifact.  When autorepo detects a new docs or schema zip (zip.deployed == false), it performs the uploading and unpacking, and then sets the `zip.deployed` property to `true`.
+
+The dist zip, on the other hand, remains within Artifactory and the SpringSource [community download page](www.springsource.com/download/community) queries repo.springsource.org to provide the list of dist zip downloads for each project.  It uses the same metadata mentioned above to perform the search.
+
+The `zip.displayname` value is used by autorepo to determine where in the community download page the artifact should show up.  So this value should match whatever name your project already has on the community download page.
