@@ -22,7 +22,7 @@ Note that emailing/postal mailing a signed copy is _not_ necessary.  Submission 
 
 When you've completed the web form, simply add the following in a comment on your pull request:
 
-    I have signed and agree to the terms of SpringSource Individual Contributor License Agreement.
+    I have signed and agree to the terms of the SpringSource Individual Contributor License Agreement.
 
 You do not need to include your token/id.  Please add the statement above to all future pull requests as well, simply so the Spring Framework team knows immediately that this process is complete.
 
