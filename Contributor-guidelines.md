@@ -27,6 +27,18 @@ When you've completed the web form, simply add the following in a comment on you
 You do not need to include your token/id.  Please add the statement above to all future pull requests as well, simply so the Spring Framework team knows immediately that this process is complete.
 
 
+## Create your branch from `master`
+
+At any given time, Spring Framework's `master` branch represents the version currently under development.  For example, if 3.1.1 was the latest Spring Framework release, `master` represents 3.2.0 development, and the `3.1.x` branch represents 3.1.2 development.
+
+Create your topic branch to be submitted as a pull request from `master`.  The Spring team will consider your pull request for backporting to maintenance versions (e.g. 3.1.2) on a case-by-case basis; you don't need to worry about submitting anything for backporting.
+
+
+## Use short branch names
+
+Branches used when submitting pull requests should preferably be named according to JIRA issues, e.g. 'SPR-1234'.  Otherwise, use succinct, lower-case, dash (-) delimited names, such as 'fix-warnings', 'fix-typo', etc.  In [fork-and-edit](https://github.com/blog/844-forking-with-the-edit-button) cases, the GitHub default 'patch-1' is fine as well.  This is important, because branch names show up in the merge commits that result from accepting pull requests, and should be as expressive and concise as possible.
+
+
 ## Mind the whitespace
 
 Please carefully follow the whitespace and formatting conventions already present in the framework.
@@ -122,10 +134,6 @@ public class Spr8954Tests {
 
 Use `git rebase --interactive`, `git add --patch` and other tools to "squash" multiple commits into atomic changes.  In addition to the man pages for git, there are many resources online to help you understand how these tools work.  Here is one: http://book.git-scm.com/4_interactive_rebasing.html.
 
-
-## Use short branch names
-
-Branches used when submitting pull requests should preferably be named according to JIRA issues, e.g. 'SPR-1234'.  Otherwise, use succinct, lower-case, dash (-) delimited names, such as 'fix-warnings', 'fix-typo', etc.  In fork-and-edit cases, the github default 'patch-1' is fine as well.  This is important, because branch names show up in the merge commits that result from accepting pull requests, and should be as expressive and concise as possible.
 
 ## Use real name in git commits
 
