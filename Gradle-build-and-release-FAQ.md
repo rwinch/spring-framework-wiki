@@ -269,7 +269,7 @@ When you're prompted for a description, you can leave it blank.
 
 Pressing the release button means that your artifacts will be published into Maven Central, but beware -- there's no going back after this point!
 
-**Synchronization to Maven Central happens every two hours**.  So your project should be discoverable via http://search.maven.org no more than two hours after you hit the release button.
+**Synchronization to Maven Central should be complete within three hours of pressing the 'release' button**.  In practice, it is usually two hours or less, but with just the right timing (or _wrong_ timing as the case may be), you may need to wait the full three.  If your artifacts do not show up at http://search.maven.org within four hours, email buildmaster@springframework.org and ask about escalation to Sonatype.
 
 ***
 <a name="wiki-docs_schema_dist_publication"/>
