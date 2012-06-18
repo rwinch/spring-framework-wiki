@@ -42,4 +42,4 @@ At any time after a issue is resolved and before a final release becomes availab
 
 ### Closed
 
-When a final release is becomes available, all issues associated with the release, including milestones and release candidates, are closed and can no longer be re-opened.
+When a final (GA) release becomes available, all issues associated with the release, including milestones and release candidates, are closed and can no longer be re-opened.
