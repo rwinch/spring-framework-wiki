@@ -16,11 +16,11 @@ At this stage the issue has not been read by a developer.
 
 Within a short period of time (usually a day or two), the issue is assigned to a specific developer and is also labeled `waiting-for-triage`. 
 
-At this stage the issue has only been read superficially to the extent of recognizing who should it should be assigned to.
+At this stage the issue has only been read superficially to the extent of recognizing whom it should be assigned to.
 
 ### Triaged
 
-The assigned developer looks at the issue and either sets the fix version or resolves it with the appropriate resolution `Duplicate`, `Cannot Reproduce`, `Wont' Fix`, `Invalid`, etc. Before doing so the developer may comment to ask for further information or request that [an issue project](https://github.com/SpringSource/spring-framework-issues#readme) be created to demonstrate the issue.
+The assigned developer looks at the issue and either sets the fix version or resolves it with the appropriate resolution `Duplicate`, `Cannot Reproduce`, `Won't Fix`, `Invalid`, etc. Before doing so the developer may comment to ask for further information or request that [an issue project](https://github.com/SpringSource/spring-framework-issues#readme) be created to demonstrate the issue.
 
 At this stage the issue has been looked at in sufficient detail and acknowledged as a valid request. The fix version indicates when it might be addressed.
 
