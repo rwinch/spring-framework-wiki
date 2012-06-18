@@ -34,11 +34,11 @@ If the issue is a bug, the fix version will likely be the next release. However,
 
 ### In Progress
 
-The developer begins working on an issue and either resolves it as `Complete` or marks it with the appropriate alternative resolution such as `Won't Fix`. This reflects the reality that although the issue may have had a fix version set for a some time, by the time actual development begins, any number of events may have taken place (related code changes, new 3rd party libraries, new IETF or JSR specs, etc) or the implementation may lead to a different decision than the one made at the time of triage.
+The developer begins working on an issue and either resolves it as `Complete` or marks it with the appropriate alternative resolution such as `Won't Fix`. This reflects the reality that although the issue may have had a fix version set for some time, by the time actual development begins, any number of events may have taken place (related code changes, new 3rd party libraries, new IETF or JSR specs, etc.), or the implementation may lead to a different decision than the one made at the time of triage.
 
 ### Resolved
 
-At any time after a issue is resolved and before a final release becomes available, an issue may be re-opened.
+At any time after an issue is resolved and before a final release becomes available, an issue may be re-opened.
 
 ### Closed
 
