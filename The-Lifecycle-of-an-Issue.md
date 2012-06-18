@@ -1,7 +1,6 @@
-
 ## Overview
 
-The [Spring Framework issue repository](https://jira.springsource.org/browse/SPR) has many tickets. To ensure every ticket is given attention, we use a process. Understanding that process will set your expectations and enable you to interpret the state an issue is currently in regardless of when it was created, a couple of days or a couple of years ago. 
+The [Spring Framework JIRA](https://jira.springsource.org/browse/SPR) has many issues. To ensure every issue is given attention, we use a process. Understanding that process will set your expectations and enable you to interpret the state an issue is currently in regardless of when it was created, a couple of days or a couple of years ago. 
 
 The process described here has been followed for issues created since 2011-01. We are working through the backlog of issues older than that.
 
@@ -9,7 +8,7 @@ The process described here has been followed for issues created since 2011-01. W
 
 ### Unassigned
 
-When an issue is first created, it is not yet assigned to anyone and does not have a fix version. 
+When an issue is first created, it may not be assigned to anyone and will not have a fix version. 
 
 At this stage the issue has not been read by a developer.
 
@@ -21,7 +20,7 @@ At this stage the issue has only been read superficially to the extent of recogn
 
 ### Triaged
 
-The assigned developer looks at the issue and either sets the fix version or resolves it with the appropriate resolution `Duplicate`, `Cannot Reproduce`, `Wont' Fix`, `Invalid`, etc. Before doing so the developer may comment to ask for further information or request that [an issue project](https://github.com/SpringSource/spring-framework-issues#readme) be created to demonstrate the issue. 
+The assigned developer looks at the issue and either sets the fix version or resolves it with the appropriate resolution `Duplicate`, `Cannot Reproduce`, `Wont' Fix`, `Invalid`, etc. Before doing so the developer may comment to ask for further information or request that [an issue project](https://github.com/SpringSource/spring-framework-issues#readme) be created to demonstrate the issue.
 
 At this stage the issue has been looked at in sufficient detail and acknowledged as a valid request. The fix version indicates when it might be addressed.
 
@@ -39,8 +38,8 @@ The developer begins working on an issue and either resolves it as `Complete` or
 
 ### Resolved
 
-At any time after a ticket is resolved and before a final release becomes available, a ticket may be re-opened.
+At any time after a issue is resolved and before a final release becomes available, an issue may be re-opened.
 
 ### Closed
 
-When a final release is becomes available, all tickets associated with the release, including milestones and release candidates, are closed and can no longer be re-opened.
+When a final release is becomes available, all issues associated with the release, including milestones and release candidates, are closed and can no longer be re-opened.
