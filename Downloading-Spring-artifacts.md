@@ -1,4 +1,4 @@
-_Looking to grab snippets of Maven XML? Jump to [Resolving Spring artifacts](#wiki-resolving-spring-artifacts)_.
+_Looking to grab snippets of Maven XML? Jump to [Resolving Spring artifacts](#wiki-resolving-spring-artifacts). Can't use Maven or other transitive dependency management solutions in your build? Read [[building a distribution with dependencies]]._
 
 ## Introduction
 
@@ -137,4 +137,4 @@ The following configuration will resolve `spring-context` 3.1.0.RELEASE:
 ```
 
 ## Manually downloading Spring distributions
-If for whatever reason you are not using a build system with dependency management capabilities, you can download Spring Framework _distribution zips_ from the SpringSource [community download page](http://www.springsource.com/download/community?project=Spring%20Framework). These distributions contain all source and binary jar files, as well as Javadoc and reference documentation, but _do not_ contain external dependencies!  However, if you build from source you can create the `-dependencies.zip` locally. See the "To build a distribution" section of [[Building from source]] for details.
+If for whatever reason you are not using a build system with dependency management capabilities, you can download Spring Framework _distribution zips_ from the SpringSource [community download page](http://www.springsource.com/download/community?project=Spring%20Framework). These distributions contain all source and binary jar files, as well as Javadoc and reference documentation, but _do not_ contain external dependencies!  However, if you build from source you can create a distribution with all dependencies locally. See [[building a distribution with dependencies]] for details.
