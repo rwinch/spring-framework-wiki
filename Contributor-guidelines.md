@@ -201,7 +201,7 @@ https://github.com/SpringSource/spring-framework/commit/b787a68f2050df179f7036b2
 
 ## Run all tests prior to submission
 
-See https://github.com/SpringSource/spring-framework#building_from_source for instructions.  Make sure that all tests pass prior to submitting your pull request.
+See the [building from source](https://github.com/SpringSource/spring-framework#building-from-source) section of the README for instructions.  Make sure that all tests pass prior to submitting your pull request.
 
 
 ## Submit your pull request
