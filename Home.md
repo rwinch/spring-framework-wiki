@@ -6,4 +6,4 @@
 * [[Contributor guidelines]]
 * [[Gradle build and release FAQ]]
 * [[SpringSource repository FAQ]]
-* [[The Lifecycle of an Issue]]
+* [[The lifecycle of an issue]]
