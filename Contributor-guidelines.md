@@ -11,8 +11,9 @@ Not sure what a pull request is, or how to submit one?  Take a look at GitHub's 
 
 Is there already an issue that addresses your concern?  Do a bit of searching in our [JIRA issue tracker](https://jira.springsource.org/browse/SPR) to see if you can find something similar.  If not, please create a new issue before submitting a pull request unless the change is truly trivial, e.g. typo fixes, removing compiler warnings, etc.
 
-If you're considering any significant change, we recommend proposing and discussing it with the development team in JIRA before putting together a pull request.  This could save you a lot of time!
+## Discuss non-trivial contribution ideas with committers
 
+If you're considering anything more than correcting a typo or fixing a minor bug , please discuss it on the [spring-framework-contrib](https://groups.google.com/forum/#!forum/spring-framework-contrib) mailing list before submitting a pull request. We're happy to provide guidance but please spend an hour or two researching the subject on your own including searching the mailing list for prior discussions.
 
 ## Sign the Contributor License Agreement
 
