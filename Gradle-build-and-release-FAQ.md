@@ -302,6 +302,6 @@ _Note: Full documentation for this feature can be found in the [Artifactory Grad
 
 The `zip.type` property tells autorepo that the artifact is a 'docs', 'schema', or 'dist'.  The `zip.deployed` property tells autorepo whether it has already uploaded and unpacked this artifact.  When autorepo detects a new docs or schema zip (zip.deployed == false), it performs the uploading and unpacking, and then sets the `zip.deployed` property to `true`.
 
-The dist zip, on the other hand, remains within Artifactory and the SpringSource [community download page](www.springsource.com/download/community) queries repo.springsource.org to provide the list of dist zip downloads for each project.  It uses the same metadata mentioned above to perform the search.
+The dist zip, on the other hand, remains within Artifactory and the SpringSource [community download page](http://www.springsource.org/download/community) queries repo.springsource.org to provide the list of dist zip downloads for each project.  It uses the same metadata mentioned above to perform the search.
 
 The `zip.displayname` value is used by autorepo to determine where in the community download page the artifact should show up.  So this value should match whatever name your project already has on the community download page.
