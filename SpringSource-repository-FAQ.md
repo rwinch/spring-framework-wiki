@@ -38,7 +38,7 @@ repo.springsource.org hosts three categories of repositories: _local_, _remote_ 
 
 _Note: see [[spring artifact versioning|Downloading Spring artifacts#wiki-artifact_versioning]] for more information_
 
-There also exist [plugins-snapshot-local](http://repo.springsource.org/webapp/browserepo.html?pathId=plugins-snapshot-local%3A) and [plugins-release-local](http://repo.springsource.org/webapp/browserepo.html?pathId=plugins-release-local%3A) repositories, used for hosting custom build system plugins, e.g. the [docbook-reference-plugin](https://github.com/cbeams/gradle-plugins).
+There also exist [plugins-snapshot-local](http://repo.springsource.org/webapp/browserepo.html?pathId=plugins-snapshot-local%3A) and [plugins-release-local](http://repo.springsource.org/webapp/browserepo.html?pathId=plugins-release-local%3A) repositories, used for hosting custom build system plugins, e.g. the [docbook-reference-plugin](https://github.com/SpringSource/gradle-plugins).
 
 **Remote repositories** serve as caches for artifacts hosted elsewhere, for example [Maven Central](http://repo1.maven.org) or the [JBoss repository](http://repository.jboss.org/nexus). These repositories are not typically accessed directly, but rather are _aggregated_ by virtual repositories as discussed below.
 
