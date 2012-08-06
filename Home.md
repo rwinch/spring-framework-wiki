@@ -7,3 +7,4 @@
 * [[Gradle build and release FAQ]]
 * [[SpringSource repository FAQ]]
 * [[The lifecycle of an issue]]
+* [[Manually merging pull requests]]
