@@ -30,10 +30,12 @@ git rebase master
 
 ## Modify working directory
 
-- polish, format, refactor, document, update changelog, etc.
-  - see the [[Contributor guidelines]] for details
-- once changes are finalized and committed to the branch, squash commits
-  into a single commit. For example: `git rebase --interactive --autosquash`
+- polish and format the contribution as necessary, in line with the [[Contributor guidelines]]
+- refactor code as necessary to comply with Spring practices (i.e., aim for uniformity with existing code, etc.)
+- update and/or add Javadoc and reference manual documentation 
+- add a new entry in `changelog.txt` if appropriate
+- if the _author_ is a VMware employee, ensure that the author's email (i.e., in the `Author:` attribute of the commit) points to his or her actual `@vmware.com` address
+- once changes are finalized and committed to the local branch, squash commits into a single commit -- for example, using `git rebase --interactive --autosquash`
 
 ## Merge into master and push
 
