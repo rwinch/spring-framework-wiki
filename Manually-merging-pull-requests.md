@@ -35,6 +35,7 @@ git rebase master
 - update and/or add Javadoc and reference manual documentation 
 - add a new entry in `src/dist/changelog.txt` if appropriate
 - if the _author_ is a VMware employee, ensure that the author's email (i.e., in the `Author:` attribute of the commit) points to his or her actual `@vmware.com` address
+ - for example: `git commit --amend --author="Firstname Lastname <flastname@vmware.com>"`
 - once changes are finalized and committed to the local branch, squash commits into a single commit -- for example, using `git rebase --interactive --autosquash`
 
 ## Merge into master and push
