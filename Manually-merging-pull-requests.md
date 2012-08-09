@@ -31,7 +31,7 @@ git rebase master
 ## Modify working directory
 
 - polish and format the contribution as necessary, in line with the [[Contributor guidelines]]
-- refactor code as necessary to comply with Spring practices (i.e., aim for uniformity with existing code, etc.)
+- refactor code as necessary to comply with Spring practices (i.e., aim for uniformity with existing code, naming conventions, etc.)
 - update and/or add Javadoc and reference manual documentation 
 - add a new entry in `changelog.txt` if appropriate
 - if the _author_ is a VMware employee, ensure that the author's email (i.e., in the `Author:` attribute of the commit) points to his or her actual `@vmware.com` address
