@@ -27,10 +27,9 @@ From this information we determine the placeholder values to be the following.
 ## Set up remote, fetch branch, and rebase
 
 ```shell
-git co master
 git remote add <ACCOUNT> https://github.com/<ACCOUNT>/spring-framework.git
 git fetch <ACCOUNT>
-git co --track <ACCOUNT>/<BRANCH> -b <BRANCH>
+git checkout --track <ACCOUNT>/<BRANCH> -b <BRANCH>
 git rebase master
 ```
 
@@ -46,7 +45,7 @@ git rebase master
 ## Merge into master and push
 
 ```shell
-git co master
+git checkout master
 git merge --no-ff --log -m "Merge pull request #<PULL_REQUEST_NUMBER> from <ACCOUNT>/<BRANCH>" <BRANCH>
 git push springsource master:master
 ```
