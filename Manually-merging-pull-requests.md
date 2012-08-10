@@ -10,11 +10,7 @@ Many of the `git` commands used on this page contain placeholders as defined bel
 
 ### Example
 
-To determine the values for these placeholders, let's take a look at [pull request #111](https://github.com/SpringSource/spring-framework/pull/111) as an example. From an _open_ pull request page you should be able to find an example `git` command for pulling the request into your local working directory. For example, if you click on the _info_ icon in the "This pull request can be automatically merged" bar, you should see something like:
-
-```shell
-git pull git://github.com/sbrannen/spring-framework.git SPR-9492
-```
+To determine the values for these placeholders, let's take a look at [pull request #111](https://github.com/SpringSource/spring-framework/pull/111) as an example. From an _open_ pull request page you should be able to find an example `git` command for pulling the request into your local working directory. For example, if you click on the _info_ icon in the "This pull request can be automatically merged" bar, you should see something like: `git pull git://github.com/sbrannen/spring-framework.git SPR-9492`
 
 From this information we determine the placeholder values to be the following.
 
@@ -27,10 +23,10 @@ From this information we determine the placeholder values to be the following.
 ## Set up remote, fetch branch, and rebase
 
 ```shell
-git remote add <ACCOUNT> https://github.com/<ACCOUNT>/spring-framework.git
-git fetch <ACCOUNT>
-git checkout --track <ACCOUNT>/<BRANCH> -b <BRANCH>
-git rebase master
+$> git remote add <ACCOUNT> https://github.com/<ACCOUNT>/spring-framework.git
+$> git fetch <ACCOUNT>
+$> git checkout --track <ACCOUNT>/<BRANCH> -b <BRANCH>
+$> git rebase master
 ```
 
 ## Modify working directory
@@ -45,15 +41,15 @@ git rebase master
 ## Merge into master and push
 
 ```shell
-git checkout master
-git merge --no-ff --log -m "Merge pull request #<PULL_REQUEST_NUMBER> from <ACCOUNT>/<BRANCH>" <BRANCH>
-git push springsource master:master
+$> git checkout master
+$> git merge --no-ff --log -m "Merge pull request #<PULL_REQUEST_NUMBER> from <ACCOUNT>/<BRANCH>" <BRANCH>
+$> git push springsource master:master
 ```
 
 Note that the above `git push` command assumes that you have configured a `springsource` remote similar to the following:
 
 ```shell
-$ git remote show springsource
+$> git remote show springsource
 * remote springsource
   Fetch URL: git@github.com:SpringSource/spring-framework.git
   Push  URL: git@github.com:SpringSource/spring-framework.git
@@ -66,7 +62,7 @@ $ git remote show springsource
 _This is only possible if you have write permissions for the remote repository -- for example, if you are merging your own pull request._
 
 ```shell
-git push --force <ACCOUNT> <BRANCH>
+$> git push --force <ACCOUNT> <BRANCH>
 ```
 
 ## Delete remote pull request branch (optional)
@@ -74,17 +70,17 @@ git push --force <ACCOUNT> <BRANCH>
 _This is only possible if you have write permissions for the remote repository -- for example, if you are merging your own pull request._
 
 ```shell
-git push <ACCOUNT> :<BRANCH>
+$> git push <ACCOUNT> :<BRANCH>
 ```
 
 ## Delete local branch (optional)
 
 ```shell
-git branch -D <BRANCH>
+$> git branch -D <BRANCH>
 ```
 
 ## Delete local remote entry (optional)
 
 ```shell
-git remote rm <ACCOUNT>
+$> git remote rm <ACCOUNT>
 ```
