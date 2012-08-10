@@ -50,6 +50,15 @@ git merge --no-ff --log -m "Merge pull request #<PULL_REQUEST_NUMBER> from <ACCO
 git push springsource master:master
 ```
 
+Note that the above `git push` command assumes that you have configured a `springsource` remote similar to the following:
+
+```shell
+$ git remote show springsource
+* remote springsource
+  Fetch URL: git@github.com:SpringSource/spring-framework.git
+  Push  URL: git@github.com:SpringSource/spring-framework.git
+```
+
 # Cleaning Up
 
 ## Update remote pull request branch to rebased/modified version (optional)
