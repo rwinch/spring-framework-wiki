@@ -2,7 +2,7 @@ _This page serves as a simple "how to" for Spring committers when manually mergi
 
 # Placeholders
 
-Many of the `git` commands listed below contain placeholders as defined below.
+Many of the `git` commands used on this page contain placeholders as defined below.
 
 - `<ACCOUNT>`: GitHub account for the author of the pull request
 - `<BRANCH>`: branch in pull request author's account (e.g., SPR-####)
