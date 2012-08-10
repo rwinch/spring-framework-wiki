@@ -10,7 +10,7 @@ Many of the `git` commands used on this page contain placeholders as defined bel
 
 ### Example
 
-To determine the values for these placeholders, let's take a look at [pull request #111](https://github.com/SpringSource/spring-framework/pull/111) as an example. From the pull request page you should be able to find an example `git` command for pulling the request into your local working directory. For example, if you click on the _info_ icon in the "This pull request can be automatically merged" bar, you should see something like `git pull git://github.com/sbrannen/spring-framework.git SPR-9492`. From this information we determine the placeholder values to be the following.
+To determine the values for these placeholders, let's take a look at [pull request #111](https://github.com/SpringSource/spring-framework/pull/111) as an example. From an _open_ pull request page you should be able to find an example `git` command for pulling the request into your local working directory. For example, if you click on the _info_ icon in the "This pull request can be automatically merged" bar, you should see something like `git pull git://github.com/sbrannen/spring-framework.git SPR-9492`. From this information we determine the placeholder values to be the following.
 
 - `<ACCOUNT>`: sbrannen
 - `<BRANCH>`: SPR-9492
