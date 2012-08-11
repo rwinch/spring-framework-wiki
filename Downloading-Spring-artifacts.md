@@ -6,13 +6,12 @@ So you're ready to start compiling and running against Spring. How do you actual
 
 ### Modularity and the need for dependency management
 
-The first thing to understand is that the Spring Framework is modular in nature, made up of about 20 different jars:
+The first thing to understand is that the Spring Framework is modular in nature, made up of about 19 different jars:
 
-    spring-aop        spring-context-support      spring-test              spring-jdbc
-    spring-asm        spring-core                 spring-tx                spring-jms
-    spring-aspects    spring-expression           spring-web               spring-orm
-    spring-beans      spring-instrument           spring-webmvc            spring-oxm
-    spring-context    spring-instrument-tomcat    spring-webmvc-portlet    spring-struts
+    spring-aop        spring-context-support    spring-instrument-tomcat    spring-oxm       spring-web
+    spring-aspects    spring-core               spring-jdbc                 spring-struts    spring-webmvc
+    spring-beans      spring-expression         spring-jms                  spring-test      spring-webmvc-portlet
+    spring-context    spring-instrument         spring-orm                  spring-tx
 
 Since the release of Spring 3, there is no longer an "über-jar" containing all Spring classes, and this is a good thing!  For example, most folks want to take advantage of the core dependency injection container (`spring-context`) but comparatively few need Spring's Portlet MVC support (`spring-webmvc-portlet`) classes hanging around on their classpath.
 
