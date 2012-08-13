@@ -55,6 +55,12 @@ $> git remote show springsource
   Push  URL: git@github.com:SpringSource/spring-framework.git
 ```
 
+# Backporting
+
+Once you have merged a pull request into `master`, you should evaluate whether the change is a possible candidate for backporting. If so, create a `Backport` sub-task for the JIRA issue corresponding to the pull request and schedule it for the appropriate _Maintenance_ version (e.g., "3.1 Maintenance"). This is the _'fire and forget'_ model for backporting, in which someone else comes along later and processes backports in bulk (at which point they are slated for a concrete maintenance release, e.g. 3.1.3).
+
+See JIRA for [example backport sub-tasks](https://jira.springsource.org/secure/IssueNavigator!executeAdvanced.jspa?jqlQuery=project+%3D+SPR+and+issuetype+%3D+%27Backport%27&runQuery=true&clear=true).
+
 # Cleaning Up
 
 ## Update remote pull request branch to rebased/modified version (optional)
