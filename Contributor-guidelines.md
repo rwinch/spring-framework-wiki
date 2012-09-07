@@ -182,7 +182,7 @@ Most importantly, please format your commit messages in the following way (adapt
      - Typically a hyphen or asterisk is used for the bullet, preceded by a
        single space, with blank lines in between, but conventions vary here
 
-    Issue: SPR-1234
+    Issue: SPR-1234, SPR-1235
 
 
 1. Use imperative statements in the subject line, e.g. "Fix broken Javadoc link"
