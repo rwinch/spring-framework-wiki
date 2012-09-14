@@ -283,7 +283,7 @@ As described in the release process documentation above, all artifacts produced 
 
 Performing these uploads directly from the build script is problematic.  It requires the build to use SSH libraries in order to SCP and unpack the zip files, which is already complex, but worse it requires that the operator of the build script has the correct SSH key authentication configured on the remote servers, and that they are within the VMware VPN.
 
-To avoid this complexity, a separate process called 'autorepo' runs periodically (every 10 minutes), querying Artifactory for these for docs and schema zips.  When new ones are found, the autorepo process does the heavy SSH lifting to upload and unpack them at the sites mentioned above.  This script is currently under development, but you can see the results of the prototype effort at http://static.springsource.org/autorepo/.
+To avoid this complexity, a separate process called 'autorepo' runs periodically (every 20 minutes), querying Artifactory for these for docs and schema zips.  When new ones are found, the autorepo process does the heavy SSH lifting to upload and unpack them at the sites mentioned above.  This script is currently under development, but you can see the results of the prototype effort at http://static.springsource.org/autorepo/.
 
 In order for autorepo to work properly, these artifacts must be annotated in Artifactory with custom metadata.  This metadata is attached to the artifacts on upload by the Artifactory Bamboo plugin.  Here's the configuration in the Spring Framework 3.2.x build plan:
 
